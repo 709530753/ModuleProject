@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 	//测试        
         print("first commit")
-    
+        print("commit by fengxin")
     }
 }
 
