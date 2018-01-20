@@ -15,7 +15,8 @@ class ViewController: UIViewController {
 	//测试        
         print("first commit")
         print("commit by fengxin")
-	//git tag test
+	//git tag test tag
+
     }
 }
 
