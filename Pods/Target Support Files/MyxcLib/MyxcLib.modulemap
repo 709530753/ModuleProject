@@ -1,0 +1,6 @@
+framework module MyxcLib {
+  umbrella header "MyxcLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

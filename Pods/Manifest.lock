@@ -1,0 +1,15 @@
+PODS:
+  - MyxcLib (0.0.1)
+  - SLMPatternLock (0.1.1)
+
+DEPENDENCIES:
+  - MyxcLib (~> 0.0.1)
+  - SLMPatternLock (~> 0.1.1)
+
+SPEC CHECKSUMS:
+  MyxcLib: bc7639d6ef0e2996dd2018952888e81a31c23f16
+  SLMPatternLock: 9557aec81fa85518f276f36ac0e536763004b56c
+
+PODFILE CHECKSUM: 7b54fca1531b39ab91d6305f0ba8c080123d1be7
+
+COCOAPODS: 1.4.0

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393D0A4558E2854A43EBFA56 /* Pods_ModuleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4555CEF63A8C3CEC747E902C /* Pods_ModuleProject.framework */; };
 		52B31CD4200F928400B71B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B31CD3200F928400B71B82 /* AppDelegate.swift */; };
 		52B31CD6200F928400B71B82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B31CD5200F928400B71B82 /* ViewController.swift */; };
 		52B31CD9200F928400B71B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B31CD7200F928400B71B82 /* Main.storyboard */; };
@@ -14,7 +15,23 @@
 		52B31CDE200F928400B71B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B31CDC200F928400B71B82 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		52C11BF220147E810000B1A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1FD14B4F15629299E622A0B9 /* Pods-ModuleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleProject/Pods-ModuleProject.debug.xcconfig"; sourceTree = "<group>"; };
+		233736A4D304945711FA6578 /* Pods-ModuleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleProject/Pods-ModuleProject.release.xcconfig"; sourceTree = "<group>"; };
+		4555CEF63A8C3CEC747E902C /* Pods_ModuleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B31CD0200F928400B71B82 /* ModuleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B31CD3200F928400B71B82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B31CD5200F928400B71B82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393D0A4558E2854A43EBFA56 /* Pods_ModuleProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16FD484356D9C8C612B65CBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FD14B4F15629299E622A0B9 /* Pods-ModuleProject.debug.xcconfig */,
+				233736A4D304945711FA6578 /* Pods-ModuleProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		52B31CC7200F928400B71B82 = {
 			isa = PBXGroup;
 			children = (
 				52B31CD2200F928400B71B82 /* ModuleProject */,
 				52B31CD1200F928400B71B82 /* Products */,
+				16FD484356D9C8C612B65CBA /* Pods */,
+				840301E92C56A4EDB062E516 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +93,14 @@
 			path = ModuleProject;
 			sourceTree = "<group>";
 		};
+		840301E92C56A4EDB062E516 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4555CEF63A8C3CEC747E902C /* Pods_ModuleProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +108,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52B31CE2200F928400B71B82 /* Build configuration list for PBXNativeTarget "ModuleProject" */;
 			buildPhases = (
+				40F13B46A2A96A60ACD701E3 /* [CP] Check Pods Manifest.lock */,
 				52B31CCC200F928400B71B82 /* Sources */,
 				52B31CCD200F928400B71B82 /* Frameworks */,
 				52B31CCE200F928400B71B82 /* Resources */,
+				7143F04FCE1731FEBB9E1F95 /* [CP] Embed Pods Frameworks */,
+				63EF3BC947DCD9ED8C186F84 /* [CP] Copy Pods Resources */,
+				52C11BF220147E810000B1A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +171,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40F13B46A2A96A60ACD701E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModuleProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63EF3BC947DCD9ED8C186F84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModuleProject/Pods-ModuleProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7143F04FCE1731FEBB9E1F95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ModuleProject/Pods-ModuleProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MyxcLib/MyxcLib.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MyxcLib.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModuleProject/Pods-ModuleProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52B31CCC200F928400B71B82 /* Sources */ = {
@@ -272,11 +367,18 @@
 		};
 		52B31CE3200F928400B71B82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD14B4F15629299E622A0B9 /* Pods-ModuleProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T6JSY2BJN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ModuleProject",
+					"$(PROJECT_DIR)/Pods/SLMPatternLock",
+				);
 				INFOPLIST_FILE = ModuleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = demo.com.ModuleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +389,18 @@
 		};
 		52B31CE4200F928400B71B82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233736A4D304945711FA6578 /* Pods-ModuleProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T6JSY2BJN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ModuleProject",
+					"$(PROJECT_DIR)/Pods/SLMPatternLock",
+				);
 				INFOPLIST_FILE = ModuleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = demo.com.ModuleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
